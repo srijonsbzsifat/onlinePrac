@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+
+    android:orientation="vertical"
+    tools:context="com.example.sifatbinzaman.onlineprac.sign_up">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <EditText
+
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:width="200dp"
+            android:gravity="center"
+            android:hint="Name"
+            android:textSize="20sp"
+
+            />
+        <EditText
+
+            android:id="@+id/etId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:width="200dp"
+            android:gravity="center"
+            android:hint="Id"
+            android:textSize="20sp"
+
+            />
+        <EditText
+
+            android:id="@+id/etLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:width="200dp"
+            android:gravity="center"
+            android:hint="Level"
+            android:textSize="20sp"
+
+            />
+        <EditText
+
+            android:id="@+id/etCredit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:width="200dp"
+            android:gravity="center"
+            android:hint="Earned Credit"
+            android:textSize="20sp"
+
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Gender"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+        <RadioGroup
+            android:id="@+id/radioGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+
+            tools:ignore="InvalidId">
+
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="100dp"
+                android:layout_below="@+id/gender"
+                android:layout_centerHorizontal="true"
+                android:text="Male"
+
+                />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="90dp"
+                android:layout_below="@+id/gender"
+                android:layout_centerHorizontal="true"
+                android:text="Female"
+
+                />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Level"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+        <CheckBox
+            android:id="@+id/chk1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:textSize="20sp"
+            android:text="1"
+
+
+
+            />
+        <CheckBox
+            android:id="@+id/chk2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="20sp"
+            android:text="2"
+
+
+
+            />
+        <CheckBox
+            android:id="@+id/chk3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="20sp"
+            android:text="3"
+
+
+
+            />
+        <CheckBox
+            android:id="@+id/chk4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="20sp"
+            android:text="4"
+
+
+
+            />
+        <EditText
+
+            android:id="@+id/birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:editable="false"
+            android:hint="Birthday"
+
+
+
+            />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:width="120dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="Save"
+
+                android:textSize="20sp"
+
+
+                />
+
+            <Button
+                android:id="@+id/btnShowAll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:width="120dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="Show All"
+
+                android:textSize="20sp"
+
+
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
+
+
+
+</LinearLayout>
